@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PRODUCT PREVIW</title>
+    <style>
+        body{
+            padding: 60px 10px;
+        }
+        .img-watch{
+            height: 400px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+        .sub-image{
+            height: 80px;
+            margin-right: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .sub-img{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="watch1.jpg" alt="watch" class="img-watch" id="watch1">
+
+    <div class="sub-img">
+        <img src="watch2.jpg" alt="img" class="sub-image" onclick="changeimage(1)">
+        <img src="watch3.jpg" alt="img" class="sub-image" onclick="changeimage(2)">
+        <img src="watch4.jpg" alt="img" class="sub-image" onclick="changeimage(3)">
+        <img src="watch5.jpg" alt="img" class="sub-image" onclick="changeimage(4)">
+        <img src="watch6.jpg" alt="img" class="sub-image" onclick="changeimage(5)">
+        <img src="watch7.jpg" alt="img" class="sub-image" onclick="changeimage(6)">
+
+    </div>
+
+
+  <script>
+        function changeimage(num){
+            const mainImage = document.getElementById(`watch1`);
+            if(num == 1){
+                mainImage.src = "watch2.jpg";
+            }else if(num == 2){
+                mainImage.src = "watch3.jpg";
+            }else if(num == 3){
+
+                mainImage.src = "watch4.jpg";
+            }else if (num == 4){
+                mainImage.src = "watch5.jpg";
+            }else if (num == 5){
+
+                mainImage.src = "watch6.jpg";
+            }else if (num == 6){
+                mainImage.src = "watch7.jpg";
+            }
+        }
+  </script>
+</body>
+</html>
